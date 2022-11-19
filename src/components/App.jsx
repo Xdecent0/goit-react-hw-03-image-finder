@@ -86,6 +86,7 @@ export function App() {
         gallery.length > 0 &&
         gallery.length !== totalHits && <Button onClick={loadMore} />}
       {showModal && <Modal modalImage={modalImage} closeModal={toggleModal} />}
+      <div></div>
     </div>
   );
 }
