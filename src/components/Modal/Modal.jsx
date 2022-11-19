@@ -24,7 +24,7 @@ export default function Modal({ closeModal, modalImage }) {
   return (
     <div className={css.Overlay} onClick={handleBackdropClick}>
       <div className={css.Modal}>
-        <img src={modalImage} />
+        <img src={modalImage} alt="something" />
       </div>
     </div>
   );
