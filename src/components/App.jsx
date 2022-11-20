@@ -5,8 +5,6 @@ import css from 'components/App.module.css';
 import { ImageGallery } from './ImageGallery/ImageGallery';
 import { Button } from './Button/Button';
 import Modal from './Modal/Modal';
-import { ThreeDots } from 'react-loader-spinner';
-
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 export class App extends Component {
@@ -93,11 +91,6 @@ export class App extends Component {
           gallery.length !== totalHits && <Button onClick={this.loadMore} />}
         {this.state.showModal && (
           <Modal modalImage={modalImage} closeModal={this.toggleModal} />
-        )}
-        {status === 'pending' && (
-          <div className={css.Loader}>
-            <ThreeDots height="80" width="80" radius="9" color="#3f51b5" />
-          </div>
         )}
       </div>
     );
