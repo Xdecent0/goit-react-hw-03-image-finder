@@ -36,7 +36,7 @@ export class App extends Component {
   async searchOnWord() {
     try {
       const response = await axios.get(
-        `?key=29521336-a1469f4927f87a0f3197cf310&q=${this.state.query}&image_type=photo&orientation=horizontal&per_page=12&page=${this.state.page}`
+        `?key=29459076-7b0904589e5cd507ddf684d97&q=${this.state.query}&image_type=photo&orientation=horizontal&per_page=12&page=${this.state.page}`
       );
       this.setState(prevState => ({
         gallery: prevState.gallery.concat(response.data.hits),
